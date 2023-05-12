@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { OAuthService } from './oauth.service';
+import { OAuthService } from './o-auth.service';
 
 describe('OAuthService', () => {
   let service: OAuthService;
