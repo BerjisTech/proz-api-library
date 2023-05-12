@@ -11,9 +11,11 @@ export class MembershipService {
 
   getMembershipStatus() {
     // Implement fetching of membership status here
+    return this.http.get<MembershipStatus>('https://api.proz.com/v1/api/membership');
   }
 
   updateMembershipStatus(membershipStatus: MembershipStatus) {
     // Implement updating of membership status here
+    return this.http.put<MembershipStatus>('https://api.proz.com/v1/api/membership', membershipStatus);
   }
 }
