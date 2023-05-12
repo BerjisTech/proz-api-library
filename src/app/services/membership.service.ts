@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { MembershipStatus } from '../DataStructure/membership-status';
 
 @Injectable({
   providedIn: 'root'
