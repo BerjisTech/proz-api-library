@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getUserData() {
+    // Implement fetching of user data here
+  }
+
+  updateUserData(userData: UserData) {
+    // Implement updating of user data here
+  }
 }

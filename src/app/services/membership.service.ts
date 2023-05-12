@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class MembershipService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getMembershipStatus() {
+    // Implement fetching of membership status here
+  }
+
+  updateMembershipStatus(membershipStatus: MembershipStatus) {
+    // Implement updating of membership status here
+  }
 }
